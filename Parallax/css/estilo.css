@@ -22,7 +22,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-select {
+/* select {
   appearance: none;
   width: 250px;
   border-radius: 5px;
@@ -31,15 +31,58 @@ select {
   padding-left: 10px;
   padding-right: 10px;
   border: 0;
+} */
+.hide {
+  height: 0 !important;
+  padding: 0 !important;
+  color: transparent;
 }
+.select {
+  position: relative;
+}
+.select-input {
+  background-color: white;
+  width: auto;
+  padding: 4px;
+  border: solid 10px white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(78, 78, 78);
+}
+.select-list::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.select-list {
+  position: absolute;
+  top: 45px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  font-size: 18px;
+  height: 250px;
+  overflow-y: scroll;
+}
+.select-list li {
+  padding: 12px 13px;
+  cursor: pointer;
+  width: auto;
+}
+.select-list li:hover {
+  background: rgb(104, 104, 104);
+  color: white;
+}
+
 ::selection {
   color: black;
   background: greenyellow;
 }
-option {
-  background: rgb(230, 230, 230);
+/* select option:checked {
+  background: rgb(224, 224, 224);
   color: rgb(0, 0, 0);
-}
+} */
 
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track {
@@ -54,7 +97,7 @@ option {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(223, 222, 222);
 }
-select::-webkit-scrollbar {
+/* select::-webkit-scrollbar {
   width: 15px;
 }
 select::-webkit-scrollbar-track {
@@ -63,7 +106,7 @@ select::-webkit-scrollbar-track {
 }
 select::-webkit-scrollbar-thumb {
   background: rgb(124, 124, 124);
-}
+} */
 
 .logo {
   width: auto;

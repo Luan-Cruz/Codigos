@@ -1,4 +1,4 @@
-const listaP = document.querySelector("select#personagem");
+const listaP = document.querySelector(".select-list");
 
 async function getData() {
   try {
@@ -22,9 +22,9 @@ async function getData() {
     });
 
     listaFiltrada.map((states) => {
-      const optt = document.createElement("option");
-      optt.text = states.name;
-      optt.value = states.image;
+      const optt = document.createElement("li");
+      optt.value = states.name;
+      optt.innerHTML = states.name;
       listaP.appendChild(optt);
     });
 
