@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABUADA</title>
+    <style>
+      body {
+        background-color: rgb(240, 173, 73);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      div {
+        color: rgb(57, 107, 165);
+        font-family: "Inter", sans-serif;
+      }
+      div#res {
+        border-radius: 15px;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: "Inter", sans-serif;
+        
+      }
+      div.div1 button {
+        background-color: rgb(76, 76, 192);
+        border-radius: 5px;
+        height: 35px;
+        border: 0;
+        color: white;
+        font-family: "Inter", sans-serif;
+      }
+      div.div1 #barNum {
+        height: 30px;
+        border-radius: 6px;
+        border: 0;
+      }
+      div#res p {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <h1>Digitie a Tabuada</h1>
+      <input type="number" name="barNum" id="barNum" />
+      <button onclick="calcular()">Calcular</button>
+    </div>
+    <div id="res">
+      <p><strong>Tabuada irá aparecer aqui </strong></p>
+    </div>
+    <script src="tabuada.js"></script>
+  </body>
+</html>

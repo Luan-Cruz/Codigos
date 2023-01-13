@@ -21,7 +21,7 @@ async function getData() {
       };
     });
 
-    listaFiltrada.map((states) => {
+    listaFiltrada.map((states) =>{
       const optt = document.createElement("li");
       optt.value = states.name;
       optt.innerHTML = states.name;
