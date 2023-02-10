@@ -1,6 +1,6 @@
 body {
   background-color: #252525;
-  background-image: url(../../RickAndMorty/imgs/rick-and-morty-portal-uhdpaper.com-hd.png);
+  background-image: url(../imgs/rick-and-morty-portal-uhdpaper.com-hd.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto;
@@ -23,18 +23,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 12em;
+  padding-left: 8em;
   padding-top: 5em;
 }
 .temas {
+  
   -webkit-text-stroke: 1px #b2df28;
   color: #32a9b6;
   font-family: "Jolly Lodger";
-  font-size: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: #252525;
+}
+.temas p{
+  margin-bottom: 20px;
+  font-size: 50px;
 }
 footer {
   display: flex;
